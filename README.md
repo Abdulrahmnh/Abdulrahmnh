@@ -6,9 +6,9 @@ Junior Software Developer
 
 I have been learning to code projects by Flutter, Currently I'm improving myself in HTML, CSS, JavaScript and a new Framework. I have really found a passion for Software Development.
 
-* 🌍  I'm based in Riyadh, Saudi Arabia
-* ✉️  You can contact me at [abdulrahmanalhatti@gmail.com](mailto:abdulrahmanalhatti@gmail.com)
-* 🧠  I'm learning a new framework
+* 🌍  I'm based in Riyadh, Saudi Arabia.
+* ✉️  You can contact me at [abdulrahmanalhatti@gmail.com](mailto:abdulrahmanalhatti@gmail.com).
+* 🧠  I'm learning a new framework.
 * 🤝  I'm open to collaborating on Web app, Mobile app, ERP and more Software.
 * ⚡  I'm very excited about an opportunity to work as one of a team to publish amazing software.
 
