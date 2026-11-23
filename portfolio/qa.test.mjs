@@ -34,13 +34,13 @@ test('every localized text element has both languages', () => {
    assert.match(element,/data-en="/);
  }
 });
-test('source-backed case images with bilingual descriptive alt', () => {
+test('project asset images with bilingual descriptive alt', () => {
  assert.ok(images.length>=2);
  for(const image of images) {
   assert.match(image,/data-alt-ar="/);
   assert.match(image,/data-alt-en="/);
   assert.match(image,/alt="/);
-  assert.match(image,/src="https:\/\/raw.githubusercontent.com\/Abdulrahmnh\/dawserve-wordpress\//);
+  assert.match(image,/src="https:\/\/dawserve.onrender.com\/wp-content\/themes\/dawserve\/assets\//);
  }
  assert.match(js,/\[data-alt-ar\]\[data-alt-en\]/);
 });
