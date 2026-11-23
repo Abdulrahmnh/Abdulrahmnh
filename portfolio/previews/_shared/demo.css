@@ -97,9 +97,12 @@ html[lang=ar] .main-nav a,html[lang=ar] .header-cta{font-family:var(--font-ar);l
 .capabilities-heading>p{width:min(310px,34%);font-size:14px;line-height:1.8;color:#5d6f72}
 .capability-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:20px}
 .capability-feature{background:var(--ink);display:flex;flex-direction:column;min-height:680px;overflow:hidden}
-.capability-photo-wrap{height:350px;position:relative;overflow:hidden;background:#263e42}
+.capability-photo-wrap{height:350px;position:relative;overflow:hidden;background:linear-gradient(125deg,#3a5658,#132a30 78%);isolation:isolate}
+.capability-photo-wrap:before{content:"R / INDUSTRIAL";position:absolute;z-index:0;right:22px;bottom:45px;color:#d4e4de2c;font:800 clamp(60px,6vw,105px)/.85 var(--font-display);letter-spacing:-.045em;white-space:nowrap}
+.capability-photo-wrap:after{content:"";position:absolute;z-index:0;inset:0;background:repeating-linear-gradient(-22deg,transparent 0 47px,#dcebe50c 47px 49px)}
+.capability-photo-wrap img{position:relative;z-index:1}
 .capability-photo-wrap img{width:100%;height:100%;object-fit:cover;object-position:center}
-.image-caption{position:absolute;bottom:0;left:0;right:0;background:rgba(7,25,29,.84);color:#fff;display:block;padding:9px 15px;font-size:9px;font-weight:700;letter-spacing:.045em;text-align:center}
+.image-caption{position:absolute;z-index:2;bottom:0;left:0;right:0;background:rgba(7,25,29,.84);color:#fff;display:block;padding:9px 15px;font-size:9px;font-weight:700;letter-spacing:.045em;text-align:center}
 .feature-overlay{color:white;display:flex;flex-direction:column;align-items:start;flex:1;padding:33px 40px 43px}
 .feature-overlay>.label-mono{color:#c4d1ce}
 .feature-overlay h3{font:700 clamp(44px,4.35vw,68px)/1 var(--font-display);text-transform:uppercase;margin-top:24px;max-width:610px}
