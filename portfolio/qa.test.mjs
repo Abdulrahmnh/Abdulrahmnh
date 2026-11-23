@@ -1,4 +1,4 @@
-import { readFileSync } from 'node:fs';
+import { readFileSync, statSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import test from 'node:test';
@@ -36,11 +36,13 @@ test('every localized text element has both languages', () => {
 });
 test('project asset images with bilingual descriptive alt', () => {
  assert.ok(images.length>=2);
+ assert.ok(statSync(resolve(base,'assets/dawserve-hero.webp')).size>50000);
+ assert.ok(statSync(resolve(base,'assets/dawserve-dental.webp')).size>10000);
  for(const image of images) {
   assert.match(image,/data-alt-ar="/);
   assert.match(image,/data-alt-en="/);
   assert.match(image,/alt="/);
-  assert.match(image,/src="https:\/\/dawserve.onrender.com\/wp-content\/themes\/dawserve\/assets\//);
+  assert.match(image,/src="assets\/dawserve-(?:hero|dental)\.webp"/);
  }
  assert.match(js,/\[data-alt-ar\]\[data-alt-en\]/);
 });
