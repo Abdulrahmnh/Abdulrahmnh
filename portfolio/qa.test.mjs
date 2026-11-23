@@ -1,4 +1,5 @@
 import test from 'node:test';
+import runtimeVm from 'node:vm';
 import assert from 'node:assert/strict';
 import { readFileSync, statSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
@@ -82,4 +83,48 @@ test('all intended conversion sections are navigable',()=>{
  for(const id of ['work','expertise','approach','contact'])assert.ok(ids.includes(id));
  assert.match(html,/class="btn btn-blue"/);
  assert.match(html,/class="project-visit"/);
+});
+
+test('bilingual toggle and mobile menu execute against a DOM fixture',()=>{
+ const vm= (awaitableVm=>awaitableVm)(runtimeVm);
+ const events={};
+ const mk=(attrs={})=>{
+  const handlers={};
+  const target={textContent:'',attributes:{...attrs},handlers,
+   getAttribute(name){return this.attributes[name]??null;},
+   setAttribute(name,value){this.attributes[name]=String(value);},
+   addEventListener(name,fn){handlers[name]=fn;},
+   contains(){return false;}
+  };
+  return target;
+ };
+ const root={lang:'ar',dir:'rtl'};
+ const switcher=mk();
+ const menu=mk({'aria-expanded':'false'});
+ const state=new Set();
+ const nav=mk();
+ nav.classList={contains(name){return state.has(name)},toggle(name,on){if(on)state.add(name);else state.delete(name)}};
+ nav.querySelectorAll=()=>[];
+ const translated=mk({'data-ar':'أهلا','data-en':'Hello'});
+ const meta=mk();
+ const doc={
+  documentElement:root,title:'',
+  getElementById(id){return {'lang-toggle':switcher,'menu-toggle':menu,'primary-nav':nav}[id]??null;},
+  querySelectorAll(selector){return selector==='[data-ar][data-en]'?[translated]:[];},
+  querySelector(){return meta;},
+  addEventListener(name,fn){events[name]=fn;}
+ };
+ const saved={};
+ vm.runInNewContext(js,{document:doc,localStorage:{getItem:()=>null,setItem(k,v){saved[k]=v;}}});
+ assert.equal(root.lang,'ar');assert.equal(root.dir,'rtl');assert.equal(translated.textContent,'أهلا');
+ assert.equal(typeof switcher.handlers.click,'function');
+ switcher.handlers.click();
+ assert.equal(root.lang,'en');assert.equal(root.dir,'ltr');assert.equal(translated.textContent,'Hello');
+ assert.equal(saved['abdulrahman-portfolio-lang'],'en');
+ menu.handlers.click();
+ assert.equal(menu.getAttribute('aria-expanded'),'true');
+ assert.ok(state.has('is-open'));
+ events.keydown({key:'Escape'});
+ assert.equal(menu.getAttribute('aria-expanded'),'false');
+ assert.ok(!state.has('is-open'));
 });
