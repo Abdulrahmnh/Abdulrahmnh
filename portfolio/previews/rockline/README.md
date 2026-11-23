@@ -37,11 +37,13 @@ They must remain labelled **concept imagery**. No real customer logo, employee p
 From repo root:
 
 \`\`\`sh
-node --test portfolio/previews/qa.test.mjs
+node --test portfolio/previews/*.test.mjs
 node --check portfolio/previews/_shared/demo.js
 python3 -m http.server 8000 --directory portfolio
 # Navigate to http://localhost:8000/previews/rockline/
 \`\`\`
+
+QA status (23 Nov 2026): 13 automated assertions passed, including three interactive simulations using a DOM harness. See [VISUAL_QA.md](./VISUAL_QA.md).
 
 QA checklist:
 - Desktop 1440, tablet 768, mobile 390, small mobile 320, both locales.
