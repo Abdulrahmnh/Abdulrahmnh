@@ -53,7 +53,9 @@ function switchLanguage(next){
 function renderSummary(data){
   if(!summary)return;
   summary.replaceChildren();
-  const items=[data.fullName,data.email,data.serviceLabel,data.location,data.requirements];
+  const choice=[...serviceSelect.options].find(option=>option.value===data.serviceValue);
+  const serviceLabel=choice?.getAttribute('data-'+language())||choice?.textContent||'';
+  const items=[data.fullName,data.email,serviceLabel,data.location,data.requirements];
   labels[language()].summary.forEach((heading,index)=>{
     const dt=document.createElement('dt'),dd=document.createElement('dd');
     dt.textContent=heading;dd.textContent=items[index];
@@ -89,11 +91,10 @@ form?.addEventListener('submit',event=>{
     return;
   }
   const values=new FormData(form);
-  const serviceOption=serviceSelect?.selectedOptions[0];
   previewData={
     fullName:String(values.get('fullName')||'').trim(),
     email:String(values.get('email')||'').trim(),
-    serviceLabel:serviceOption?.getAttribute('data-'+language())||serviceOption?.textContent||'',
+    serviceValue:String(values.get('service')||''),
     location:String(values.get('location')||'').trim(),
     requirements:String(values.get('requirements')||'').trim()
   };
