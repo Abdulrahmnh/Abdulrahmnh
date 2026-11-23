@@ -8,51 +8,71 @@ const base = dirname(fileURLToPath(import.meta.url));
 const html = readFileSync(resolve(base, 'index.html'), 'utf8');
 const css = readFileSync(resolve(base, 'styles.css'), 'utf8');
 const js = readFileSync(resolve(base, 'app.js'), 'utf8');
-const anchors = [...html.matchAll(/<a\b[^>]*>/g)].map(match => match[0]);
-const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]);
+const anchors = [...html.matchAll(/<a\b[^>]*>/g)].map(m => m[0]);
+const images = [...html.matchAll(/<img\b[^>]*>/g)].map(m => m[0]);
+const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map(m => m[1]);
 
-test('semantic structure has one H1 and unique ids', () => {
-  assert.equal((html.match(/<h1\b/g) || []).length, 1);
-  assert.equal(new Set(ids).size, ids.length);
+test('one semantic H1 and unique element ids', () => {
+ assert.equal((html.match(/<h1\b/g)||[]).length,1);
+ assert.equal(new Set(ids).size,ids.length);
 });
-test('all same-page links lead to existing ids', () => {
-  const fragments = [...html.matchAll(/href="#([^"]+)"/g)].map(match => match[1]);
-  for (const fragment of fragments) assert.ok(ids.includes(fragment), 'missing #' + fragment);
+test('all internal links point to actual elements', () => {
+ for(const fragment of [...html.matchAll(/href="#([^"]+)"/g)].map(m=>m[1]))
+   assert.ok(ids.includes(fragment),'missing #'+fragment);
 });
-test('external links open safely', () => {
-  for (const anchor of anchors.filter(link => link.includes('target="_blank"'))) {
-    assert.match(anchor, /rel="[^"]*noopener/);
-    assert.match(anchor, /rel="[^"]*noreferrer/);
-  }
+test('external links have secure rel attributes', () => {
+ for(const anchor of anchors.filter(a=>a.includes('target="_blank"'))) {
+   assert.match(anchor,/rel="[^"]*noopener/);
+   assert.match(anchor,/rel="[^"]*noreferrer/);
+ }
 });
-test('all translatable text has both languages', () => {
-  const marked = [...html.matchAll(/<\w+[^>]*data-(?:ar|en)="[^"]*"[^>]*>/g)].map(match => match[0]);
-  assert.ok(marked.length >= 45);
-  for (const element of marked) {
-    assert.match(element, /data-ar="/);
-    assert.match(element, /data-en="/);
-  }
+test('every localized text element has both languages', () => {
+ const localized=[...html.matchAll(/<\w+[^>]*data-(?:ar|en)="[^"]*"[^>]*>/g)].map(m=>m[0]);
+ assert.ok(localized.length>=50, 'expected at least 50 localized elements');
+ for(const element of localized) {
+   assert.match(element,/data-ar="/);
+   assert.match(element,/data-en="/);
+ }
 });
-test('language toggle, persistence and direction are retained', () => {
-  assert.match(js, /localStorage/);
-  assert.match(js, /root\.dir/);
-  assert.match(js, /root\.lang/);
-  assert.match(html, /id="lang-toggle"/);
+test('source-backed case images with bilingual descriptive alt', () => {
+ assert.ok(images.length>=2);
+ for(const image of images) {
+  assert.match(image,/data-alt-ar="/);
+  assert.match(image,/data-alt-en="/);
+  assert.match(image,/alt="/);
+  assert.match(image,/src="https:\/\/raw.githubusercontent.com\/Abdulrahmnh\/dawserve-wordpress\//);
+ }
+ assert.match(js,/\[data-alt-ar\]\[data-alt-en\]/);
 });
-test('proposal demo is disclosed, with no indexing before approval', () => {
-  assert.match(html, /content="noindex, nofollow"/);
-  assert.match(html, /not a paid or approved client delivery/);
-  assert.match(html, /not an actual website screenshot/);
+test('language toggle persists and sets text direction and page metadata', () => {
+ assert.match(js,/localStorage/);
+ assert.match(js,/root\.lang/);
+ assert.match(js,/root\.dir/);
+ assert.match(js,/document\.title/);
+ assert.match(html,/id="lang-toggle"/);
 });
-test('editorial design replaced mock browser and equal cards', () => {
-  assert.doesNotMatch(html, /browser-shell|mock-site|service-card/);
-  assert.match(html, /class="case-grid"/);
-  assert.match(html, /class="service-list"/);
+test('visual-first redesign contains no fake website illustrations or emoji arrows', () => {
+ assert.match(html,/class="hero-showcase"/);
+ assert.match(html,/class="case-study"/);
+ assert.match(html,/class="service-grid"/);
+ assert.doesNotMatch(html,/FROM BRIEF|TO BUILD|CLARITY AT EVERY STEP|browser-shell|mock-site/);
+ assert.doesNotMatch(html,/↗|➡|↪/);
+ assert.match(html,/class="icon-arrow"/);
 });
-test('responsive and accessible styles are present', () => {
-  assert.match(css, /max-width:680px/);
-  assert.match(css, /max-width:390px/);
-  assert.match(css, /prefers-reduced-motion/);
-  assert.match(css, /:focus-visible/);
-  assert.equal((css.match(/{/g)||[]).length, (css.match(/}/g)||[]).length);
+test('proposal demo disclosures and safe noindex remain', () => {
+ assert.match(html,/content="noindex, nofollow"/);
+ assert.match(html,/independent proposal demo/i);
+ assert.match(html,/not a production WordPress runtime/);
+ assert.match(html,/غير معتمد/);
+});
+test('responsive accessibility and reduced motion are styled', () => {
+ assert.match(css,/@media\(max-width:620px\)/);
+ assert.match(css,/@media\(max-width:365px\)/);
+ assert.match(css, /:focus-visible/);
+ assert.match(css,/prefers-reduced-motion/);
+ assert.equal((css.match(/{/g)||[]).length,(css.match(/}/g)||[]).length);
+});
+test('site has clear journeys to work, services and contact', () => {
+ for(const id of ['work','services','process','contact'])assert.ok(ids.includes(id));
+ assert.match(html,/https:\/\/dawserve\.onrender\.com\//);
 });
