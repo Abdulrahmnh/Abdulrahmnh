@@ -4,150 +4,139 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#f8f7f4">
   <meta name="robots" content="noindex, nofollow">
-  <meta name="theme-color" content="#102a2d">
-  <meta name="description" content="عبدالرحمن — مطور مواقع مستقل متخصص في مواقع الشركات، كتالوجات المنتجات، WordPress وتجارب طلب عروض الأسعار.">
-  <title>عبدالرحمن | مطور ويب مستقل</title>
+  <meta name="description" content="عبدالرحمن — مطور ويب مستقل يبني مواقع شركات وكتالوجات B2B وأنظمة WordPress وتجارب عربية وإنجليزية.">
+  <title>عبدالرحمن — تطوير مواقع للشركات</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <script defer src="app.js"></script>
+  <script src="app.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#main" data-ar="تجاوز إلى المحتوى" data-en="Skip to content">تجاوز إلى المحتوى</a>
+  <a class="skip-link" href="#main"><span data-ar="انتقل للمحتوى" data-en="Skip to content">انتقل للمحتوى</span></a>
   <header class="site-header" id="top">
-    <div class="shell header-layout">
-      <a class="brand" href="#top" aria-label="Abdulrahman portfolio home">
-        <span class="brand-emblem" aria-hidden="true">A<span>.</span></span>
-        <span class="brand-copy"><strong>ABDULRAHMAN</strong><small data-ar="تطوير مواقع للشركات" data-en="WEB DEVELOPMENT FOR BUSINESS">تطوير مواقع للشركات</small></span>
+    <div class="container header-content">
+      <a class="brand" href="#top" aria-label="Abdulrahman Studio home">
+        <span class="brand-logo" aria-hidden="true">A<span>/</span></span>
+        <span class="brand-name"><strong>ABDULRAHMAN</strong><small><span data-ar="INDEPENDENT WEB DEVELOPER" data-en="INDEPENDENT WEB DEVELOPER">INDEPENDENT WEB DEVELOPER</span></small></span>
       </a>
-      <nav class="desktop-nav" aria-label="Main navigation">
-        <a href="#work" data-ar="أعمالي" data-en="Selected work">أعمالي</a>
-        <a href="#services" data-ar="الخدمات" data-en="Services">الخدمات</a>
-        <a href="#process" data-ar="طريقة العمل" data-en="Approach">طريقة العمل</a>
+      <nav id="primary-nav" class="main-nav" aria-label="Main navigation">
+        <a href="#work"><span data-ar="الأعمال" data-en="Work">الأعمال</span></a>
+        <a href="#expertise"><span data-ar="الخدمات" data-en="Expertise">الخدمات</span></a>
+        <a href="#approach"><span data-ar="طريقة العمل" data-en="Process">طريقة العمل</span></a>
+        <a class="mobile-contact-link" href="#contact"><span data-ar="ابدأ مشروعك" data-en="Start a project">ابدأ مشروعك</span></a>
       </nav>
-      <div class="header-actions">
-        <button class="language-switch" id="lang-toggle" type="button" aria-label="Switch to English">EN</button>
-        <a class="header-cta" href="#contact"><span data-ar="تواصل معي" data-en="Start a project">تواصل معي</span><svg class="icon-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+      <div class="header-tools">
+        <button id="lang-toggle" class="lang-toggle" type="button" aria-label="Switch to English">EN</button>
+        <a class="header-action" href="#contact"><span data-ar="خلّنا نتكلم" data-en="Let's talk">خلّنا نتكلم</span><svg class="ic ic-ext" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+        <button id="menu-toggle" class="menu-toggle" type="button" aria-label="فتح القائمة" aria-controls="primary-nav" aria-expanded="false"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
       </div>
     </div>
   </header>
+
   <main id="main">
-    <section class="hero" aria-labelledby="hero-heading">
-      <div class="shell hero-layout">
-        <div class="hero-copy">
-          <p class="hero-eyebrow"><span class="eyebrow-rule" aria-hidden="true"></span><span data-ar="مطور ويب مستقل · السعودية" data-en="INDEPENDENT WEB DEVELOPER · SAUDI ARABIA">مطور ويب مستقل · السعودية</span></p>
-          <h1 id="hero-heading"><span data-ar="موقع أفضل." data-en="Your business,">موقع أفضل.</span><span class="hero-accent" data-ar="فرص أكثر." data-en="better online.">فرص أكثر.</span></h1>
-          <p class="hero-description" data-ar="أصمم وأطوّر مواقع للشركات تساعد الزائر يفهم خدماتك، يكتشف منتجاتك ويتواصل معك بسهولة. بتصميم مخصص، وتجربة ممتازة على الجوال، وإدارة محتوى عملية." data-en="I design and build business websites that help customers understand your services, explore your products and get in touch. Custom design, thoughtful mobile experiences and practical content management.">أصمم وأطوّر مواقع للشركات تساعد الزائر يفهم خدماتك، يكتشف منتجاتك ويتواصل معك بسهولة. بتصميم مخصص، وتجربة ممتازة على الجوال، وإدارة محتوى عملية.</p>
-          <div class="hero-actions">
-            <a class="button button-mint" href="#work"><span data-ar="شاهد أحد أعمالي" data-en="See my work">شاهد أحد أعمالي</span><svg class="icon-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
-            <a class="inline-link" href="#contact"><span data-ar="ناقش موقع شركتك" data-en="Discuss your website">ناقش موقع شركتك</span><svg class="icon-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
-          </div>
-          <div class="hero-note">
-            <span class="note-line" aria-hidden="true"></span>
-            <span data-ar="تطوير مباشر مع المطور. من الفكرة إلى التجربة والتسليم." data-en="Direct collaboration. From the brief to design, development and handover.">تطوير مباشر مع المطور. من الفكرة إلى التجربة والتسليم.</span>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-head">
+        <div class="hero-left">
+          <div class="hero-kicker"><span class="blue-pip" aria-hidden="true"></span><span data-ar="تطوير ويب مستقل / المملكة العربية السعودية" data-en="INDEPENDENT WEB DEVELOPMENT / SAUDI ARABIA">تطوير ويب مستقل / المملكة العربية السعودية</span></div>
+          <h1 id="hero-title">
+            <span data-ar="مواقع تستحق" data-en="Websites with">مواقع تستحق</span>
+            <span class="hero-highlight" data-ar="أن يتذكّرها" data-en="more purpose.">أن يتذكّرها</span>
+            <span data-ar="عملاؤك." data-en="Less noise.">عملاؤك.</span>
+          </h1>
+          <p class="hero-intro" data-ar="أنا عبدالرحمن. أبني مواقع للشركات تجمع بين التصميم الواضح والتطوير العملي؛ من الموقع التعريفي إلى الكتالوج وطلبات عروض الأسعار." data-en="I'm Abdulrahman. I build thoughtful business websites that connect clear design with reliable engineering — from corporate sites to catalogs and quotation flows.">أنا عبدالرحمن. أبني مواقع للشركات تجمع بين التصميم الواضح والتطوير العملي؛ من الموقع التعريفي إلى الكتالوج وطلبات عروض الأسعار.</p>
+          <div class="hero-cta-row">
+            <a class="btn btn-blue" href="#work"><span data-ar="شاهد شغلي" data-en="Explore my work">شاهد شغلي</span><svg class="ic ic-arrow" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+            <a class="underline-link" href="#contact"><span data-ar="عندك موقع يحتاج تطوير؟" data-en="Have a project?">عندك موقع يحتاج تطوير؟</span><svg class="ic ic-ext" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
           </div>
         </div>
-        <a class="hero-showcase" href="#work" aria-label="Explore the featured website concept" tabindex="0">
-          <img src="assets/dawserve-hero.webp" alt="صورة طبية مستخدمة في النموذج التجريبي لموقع DawServe" width="1050" height="850" fetchpriority="high" data-alt-ar="صورة طبية مستخدمة في النموذج التجريبي لموقع DawServe" data-alt-en="Medical photography used in the independent DawServe website concept">
-          <div class="showcase-shade" aria-hidden="true"></div>
-          <div class="showcase-top"><span class="tiny-pulse" aria-hidden="true"></span><span>FEATURED CONCEPT / 01</span></div>
-          <div class="showcase-caption">
-            <div><small>DAWSERVE / B2B WEBSITE</small><strong data-ar="تجربة موقع شركة، من الواجهة حتى لوحة الإدارة." data-en="A business website. From storefront to content management.">تجربة موقع شركة، من الواجهة حتى لوحة الإدارة.</strong></div>
-            <span class="showcase-arrow"><svg class="icon-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+        <div class="hero-art" role="img" aria-label="Original Abdulrahman Studio cobalt identity artwork and visual index of website services">
+          <div class="art-top"><span class="latin">A/STUDIO &nbsp;—&nbsp; DIGITAL WORK</span><span class="art-cross" aria-hidden="true">+</span></div>
+          <div class="art-big latin" aria-hidden="true">MAKE<br><i>IT</i> WORK<span>.</span></div>
+          <div class="art-halo" aria-hidden="true"><div class="halo-inner"></div></div>
+          <div class="art-bottom">
+            <div><small class="latin">INDEPENDENT BY DESIGN</small><strong><span data-ar="مبني للفكرة. مش للقالب." data-en="Built for the brief. Not a template.">مبني للفكرة. مش للقالب.</span></strong></div>
+            <span class="art-signature latin">A/</span>
           </div>
-        </a>
+        </div>
       </div>
-      <div class="shell hero-footer"><span data-ar="مواقع الشركات" data-en="BUSINESS WEBSITES">مواقع الشركات</span><span class="hero-footer-sep" aria-hidden="true"></span><span>B2B CATALOG</span><span class="hero-footer-sep" aria-hidden="true"></span><span>WORDPRESS CMS</span><span class="hero-footer-sep" aria-hidden="true"></span><span>AR / EN</span></div>
+      <div class="container hero-footer"><span class="hero-footer-index latin">01 / SELECTED WORK BELOW</span><div class="hero-divider"></div><a href="#work"><span data-ar="اكتشف الأعمال" data-en="Scroll to the work">اكتشف الأعمال</span><svg class="ic" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.8" aria-hidden="true"><path d="M12 4v16m-6-6 6 6 6-6"/></svg></a></div>
     </section>
 
-    <section class="intro" aria-labelledby="intro-title">
-      <div class="shell intro-layout">
-        <p class="small-label">01 / <span data-ar="الفكرة" data-en="THE IDEA">الفكرة</span></p>
-        <div class="intro-main">
-          <h2 id="intro-title" data-ar="واجهة جميلة مهمة. لكن الأهم وش يقدر عميلك يسوي فيها." data-en="A beautiful website matters. What your customers can do with it matters more.">واجهة جميلة مهمة. لكن الأهم وش يقدر عميلك يسوي فيها.</h2>
-          <p data-ar="موقعك لازم يشرح نشاطك ويخدمه، مو يكون بروشور إلكتروني فقط. لذلك أربط التصميم بتصفّح واضح، تجربة استخدام مريحة، ومحتوى يقدر فريقك يحدّثه بنفسه." data-en="A website should explain and support your business, not just act as a digital brochure. I connect design to intuitive navigation, usable experiences and content your team can update.">موقّعك لازم يشرح نشاطك ويخدمه، مو يكون بروشور إلكتروني فقط. لذلك أربط التصميم بتصفّح واضح، تجربة استخدام مريحة، ومحتوى يقدر فريقك يحدّثه بنفسه.</p>
-        </div>
+    <section class="proof-strip" aria-label="Core specialties">
+      <div class="container proof-row">
+        <span>BUSINESS WEBSITES</span><b aria-hidden="true">*</b><span>B2B CATALOGS</span><b aria-hidden="true">*</b><span>WORDPRESS CMS</span><b aria-hidden="true">*</b><span>ARABIC / ENGLISH</span>
       </div>
     </section>
 
-    <section class="featured" id="work" aria-labelledby="work-title">
-      <div class="shell">
-        <div class="section-heading">
-          <p class="small-label">02 / <span data-ar="عمل مختار" data-en="SELECTED WORK">عمل مختار</span></p>
-          <div class="heading-row"><h2 id="work-title" data-ar="شغل تقدر تجرّبه بنفسك." data-en="A working concept you can explore.">تجربة حقيقية. وليست مجرد صورة.</h2><span class="heading-side" data-ar="مقترح مستقل · 2026" data-en="Independent concept · 2026">مقترح مستقل · 2026</span></div>
-        </div>
-        <article class="case-study">
-          <div class="case-image">
-            <img src="assets/dawserve-dental.webp" alt="صورة منتج من المواد المصورة المستخدمة في نموذج DawServe" width="1300" height="790" loading="lazy" data-alt-ar="لقطات تحقق فعلية لواجهات DawServe التجريبية على أكثر من مقاس" data-alt-en="Product photography from the DawServe concept website">
-            <div class="case-image-label"><span class="case-dot" aria-hidden="true"></span><span>DAWSERVE / PRODUCT EXPERIENCE</span></div>
-          </div>
-          <div class="case-content">
-            <p class="case-kicker"><span class="case-dot" aria-hidden="true"></span><span data-ar="مقترح تطوير مستقل" data-en="INDEPENDENT PROPOSAL CONCEPT">مقترح تطوير مستقل</span></p>
-            <h3>DawServe</h3>
-            <p class="case-statement" data-ar="موقع شركة طبية وكتالوج منتجات مصمم لتسهيل اكتشاف الاحتياج وطلب عرض سعر." data-en="A medical supply company website and product catalog designed around easier discovery and quotation requests.">موقع شركة طبية وكتالوج منتجات مصمم لتسهيل اكتشاف الاحتياج وطلب عرض سعر.</p>
-            <ul class="case-highlights">
-              <li><span data-ar="صفحات ونماذج متجاوبة بالعربية والإنجليزية" data-en="Responsive Arabic and English pages">صفحات ونماذج متجاوبة بالعربية والإنجليزية</span></li>
-              <li><span data-ar="كتالوج وتصنيفات وبحث عن المنتجات" data-en="Product catalog, categories and search">كتالوج وتصنيفات وبحث عن المنتجات</span></li>
-              <li><span data-ar="رحلة طلب عرض السعر (RFQ)" data-en="Request-for-quotation journey (RFQ)">رحلة طلب عرض السعر (RFQ)</span></li>
-              <li><span data-ar="إدارة محتوى ومنتجات باستخدام WordPress" data-en="WordPress content and product management">إدارة محتوى ومنتجات باستخدام WordPress</span></li>
-            </ul>
-            <a class="button button-dark" href="https://dawserve.onrender.com/" target="_blank" rel="noopener noreferrer nofollow"><span data-ar="جرّب موقع DawServe" data-en="Explore the live concept">جرّب موقع DawServe</span><svg class="icon-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
-            <p class="case-disclosure" data-ar="تنويه: هذا نموذج مقترح مستقل وغير معتمد بوصفه موقع العميل الرسمي أو مشروعًا مدفوعًا تم تسليمه. الصور المستخدمة من أصول التصميم بالمشروع، بينما النسخة المنشورة Demo وليست نظام WordPress إنتاجيًا." data-en="Disclosure: This is an independent proposal demo, not an endorsed official client website or a paid delivery. Images are from the concept's design assets; the public demo is a static preview, not a production WordPress runtime.">تنويه: هذا نموذج مقترح مستقل وغير معتمد بوصفه موقع العميل الرسمي أو مشروعًا مدفوعًا تم تسليمه. صور الواجهة من اختبارات المشروع، بينما النسخة المنشورة Demo وليست نظام WordPress إنتاجيًا.</p>
+    <section class="work-section" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <div class="section-kicker"><span class="section-no">01.</span><span><span data-ar="أعمال مختارة" data-en="SELECTED WORK">أعمال مختارة</span></span></div>
+        <div class="section-lead"><h2 id="work-title" data-ar="الشغل الجيد <em>واضح.</em>" data-en="Proof over <em>promises.</em>">الشغل الجيد <em>واضح.</em></h2><p data-ar="مش مجرد تصميم جميل؛ مشروع تقدر تفتحه وتجرب رحلة المستخدم فيه." data-en="Not just a pretty image. Explore an actual concept and its user journey.">مش مجرد تصميم جميل؛ مشروع تقدر تفتحه وتجرب رحلة المستخدم فيه.</p></div>
+        <article class="project-feature">
+          <div class="project-head"><span class="project-tag latin">FEATURED / 001</span><span class="project-year latin">2026 — INDEPENDENT CONCEPT</span></div>
+          <div class="project-grid">
+            <div class="project-visual" aria-label="DawServe independent proposal visuals">
+              <div class="project-screen">
+                <div class="screen-top"><span class="screen-traffic" aria-hidden="true"><i></i><i></i><i></i></span><span class="latin">DAWSERVE · B2B CONCEPT</span></div>
+                <div class="screen-inside">
+                  <div class="screen-copy"><span class="screen-tiny latin">MEDICAL SUPPLIES / BUSINESS SITE</span><strong data-ar="اكتشف المنتج.<br>اطلب تسعيره." data-en="Discover products.<br>Request a quote.">اكتشف المنتج.<br>اطلب تسعيره.</strong><span class="screen-cta"><span data-ar="تصفح المنتجات" data-en="Explore catalog">تصفح المنتجات</span><svg class="ic ic-arrow" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span></div>
+                  <img class="screen-photo" src="assets/dawserve-hero.webp" width="760" height="570" loading="lazy" alt="صورة مستخدمة في تجربة الموقع المقترح لشركة DawServe" data-alt-ar="صورة مستخدمة في تجربة الموقع المقترح لشركة DawServe" data-alt-en="Medical supply photography from the independent DawServe concept">
+                </div>
+              </div>
+              <div class="project-mini">
+                <span class="latin">SITE → CATALOG → RFQ</span>
+                <img src="assets/dawserve-dental.webp" alt="صورة منتج طبي من كتالوج DawServe التجريبي" data-alt-ar="صورة منتج طبي من كتالوج DawServe التجريبي" data-alt-en="Medical product image from the DawServe concept catalog" width="400" height="250" loading="lazy">
+              </div>
+              <div class="project-visual-stamp latin">01 / WEBSITE<br>CASE STUDY</div>
+            </div>
+            <div class="project-copy">
+              <span class="concept-label"><span class="concept-pip"></span><span data-ar="مقترح مستقل — ليس مشروع عميل مُسلّم" data-en="INDEPENDENT PROPOSAL — NOT A CLIENT DELIVERY">مقترح مستقل — ليس مشروع عميل مُسلّم</span></span>
+              <h3 class="project-name latin">DawServe<span>.</span></h3>
+              <p class="project-summary" data-ar="تصوّر جديد لموقع شركة مستلزمات طبية: عرض أوضح للخدمات، كتالوج قابل للتصفّح، وتجربة طلب عرض سعر — مع بنية WordPress لإدارة المحتوى." data-en="An independent redesign concept for a medical supply company: clearer services, a browsable catalog, a quotation-request journey, and a WordPress content-management foundation.">تصوّر جديد لموقع شركة مستلزمات طبية: عرض أوضح للخدمات، كتالوج قابل للتصفّح، وتجربة طلب عرض سعر — مع بنية WordPress لإدارة المحتوى.</p>
+              <div class="project-pills"><span>BILINGUAL</span><span>WORDPRESS</span><span>PRODUCT CATALOG</span><span>RFQ</span></div>
+              <a class="project-visit" href="https://dawserve.onrender.com/" target="_blank" rel="noopener noreferrer nofollow"><span data-ar="جرّب النموذج بنفسك" data-en="Explore the working concept">جرّب النموذج بنفسك</span><svg class="ic ic-ext" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+              <p class="concept-disclosure" data-ar="هذه تجربة تطوير مقترحة مستقلة وليست موقعًا رسميًا معتمدًا أو مشروعًا مدفوعًا تم تسليمه. الصور من أصول النموذج، والمعاينة العامة ثابتة وليست نظام WordPress إنتاجيًا." data-en="This is an independently created proposal, not an endorsed official site or a paid client delivery. Images are sourced from concept assets; the public preview is static, not a production WordPress service.">هذه تجربة تطوير مقترحة مستقلة وليست موقعًا رسميًا معتمدًا أو مشروعًا مدفوعًا تم تسليمه. الصور من أصول النموذج، والمعاينة العامة ثابتة وليست نظام WordPress إنتاجيًا.</p>
+            </div>
           </div>
         </article>
-        <div class="project-breakdown">
-          <div class="breakdown-item"><span class="number">01</span><h4 data-ar="تصفّح يختصر الخطوات" data-en="Clearer product discovery">تصفّح يختصر الخطوات</h4><p data-ar="توزيع المنتجات وتصنيفاتها ليسهُل وصول الزائر لما يحتاجه." data-en="Structured categories and browsing help people find relevant products.">توزيع المنتجات وتصنيفاتها ليسهُل وصول الزائر لما يحتاجه.</p></div>
-          <div class="breakdown-item"><span class="number">02</span><h4 data-ar="تحويل الاهتمام إلى طلب" data-en="From interest to enquiry">تحويل الاهتمام إلى طلب</h4><p data-ar="اختيار المنتجات ثم إرسال متطلبات عرض السعر من مسار واضح." data-en="Choose products and share quotation requirements through a clear flow.">اختيار المنتجات ثم إرسال متطلبات عرض السعر من مسار واضح.</p></div>
-          <div class="breakdown-item"><span class="number">03</span><h4 data-ar="إدارة ما بعد الإطلاق" data-en="Manage after launch">إدارة ما بعد الإطلاق</h4><p data-ar="بنية WordPress تساعد فريق الشركة في إدارة الصفحات والكتالوج." data-en="A WordPress foundation for managing pages and catalog content.">بنية WordPress تساعد فريق الشركة في إدارة الصفحات والكتالوج.</p></div>
+        <div class="work-foot"><span class="latin">MORE WORK / WHEN IT'S READY</span><p data-ar="مساحة مرتبة لمشاريع جديدة مستقبلًا، بدون تغيير هوية الموقع لكل عميل." data-en="Room for new work, without rebuilding the studio identity around each client.">مساحة مرتبة لمشاريع جديدة مستقبلًا، بدون تغيير هوية الموقع لكل عميل.</p></div>
+      </div>
+    </section>
+
+    <section class="expertise" id="expertise" aria-labelledby="expertise-title">
+      <div class="container">
+        <div class="section-kicker section-kicker-white"><span class="section-no">02.</span><span><span data-ar="ما أقدّمه" data-en="WHAT I BUILD">ما أقدّمه</span></span></div>
+        <div class="expertise-heading"><h2 id="expertise-title" data-ar="مواقع تخدم عملك.<br><em>مو العكس.</em>" data-en="Digital work with<br><em>a business purpose.</em>">مواقع تخدم عملك.<br><em>مو العكس.</em></h2><p data-ar="أركز على الأشياء اللي يحتاجها العميل فعلًا: وضوح، سرعة، تجربة استخدام، وإدارة سهلة بعد التسليم." data-en="I focus on what clients actually need: clarity, speed, usable journeys and easy content ownership after handover.">أركز على الأشياء اللي يحتاجها العميل فعلًا: وضوح، سرعة، تجربة استخدام، وإدارة سهلة بعد التسليم.</p></div>
+        <div class="capabilities">
+          <article class="capability"><span class="cap-number latin">01 /</span><h3 data-ar="مواقع الشركات" data-en="Company websites">مواقع الشركات</h3><p data-ar="موقع يمثل شركتك، يشرح خدماتها، ويعطي الزائر طريقًا واضحًا للتواصل." data-en="A clear digital home for your business, services and enquiries.">موقع يمثل شركتك، يشرح خدماتها، ويعطي الزائر طريقًا واضحًا للتواصل.</p><span class="cap-decoration"><svg class="ic ic-arrow" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span></article>
+          <article class="capability"><span class="cap-number latin">02 /</span><h3 data-ar="كتالوجات B2B" data-en="B2B catalogs">كتالوجات B2B</h3><p data-ar="تصنيفات ومنتجات وبحث وطلبات عروض أسعار تناسب طريقة عمل الشركات." data-en="Categories, product discovery and quote-request flows designed for B2B.">تصنيفات ومنتجات وبحث وطلبات عروض أسعار تناسب طريقة عمل الشركات.</p><span class="cap-decoration"><svg class="ic ic-arrow" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span></article>
+          <article class="capability"><span class="cap-number latin">03 /</span><h3 data-ar="أنظمة إدارة المحتوى" data-en="Content management">أنظمة إدارة المحتوى</h3><p data-ar="WordPress ولوحات تحرير تساعد فريقك يحدّث المحتوى بدون تدخل مطور لكل تعديل." data-en="WordPress and editable content so teams can publish without relying on a developer for every edit.">WordPress ولوحات تحرير تساعد فريقك يحدّث المحتوى بدون تدخل مطور لكل تعديل.</p><span class="cap-decoration"><svg class="ic ic-arrow" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span></article>
         </div>
       </div>
     </section>
 
-    <section class="services" id="services" aria-labelledby="services-title">
-      <div class="shell">
-        <div class="section-heading">
-          <p class="small-label">03 / <span data-ar="الخدمات" data-en="SERVICES">الخدمات</span></p>
-          <div class="heading-row"><h2 id="services-title" data-ar="وش تحتاج شركتك من موقعها؟" data-en="What should your website do?">وش تحتاج شركتك من موقعها؟</h2><p class="section-description" data-ar="أختار الأدوات بناءً على المشكلة، مو العكس." data-en="Tools follow the business problem, not the other way around.">أختار الأدوات بناءً على المشكلة، مو العكس.</p></div>
-        </div>
-        <div class="service-grid">
-          <article class="service"><span class="service-index">01 / WEB</span><div class="service-illustration service-web" aria-hidden="true"><svg viewBox="0 0 150 120" fill="none"><rect x="14" y="22" width="122" height="77" rx="5" stroke="currentColor" stroke-width="2"/><path d="M14 38h122M24 30h4m6 0h4m6 0h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><rect x="28" y="49" width="46" height="37" rx="2" fill="currentColor" opacity=".14"/><path d="M84 55h39M84 65h31M84 75h25" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></div><h3 data-ar="مواقع الشركات" data-en="Business websites">مواقع الشركات</h3><p data-ar="موقع مخصص متجاوب يعكس هوية شركتك ويوصل خدماتها بوضوح." data-en="Custom, responsive websites that reflect your business and explain your services clearly.">موقع مخصص متجاوب يعكس هوية شركتك ويوصل خدماتها بوضوح.</p></article>
-          <article class="service"><span class="service-index">02 / CATALOG</span><div class="service-illustration service-catalog" aria-hidden="true"><svg viewBox="0 0 150 120" fill="none"><rect x="20" y="17" width="48" height="38" rx="4" stroke="currentColor" stroke-width="2"/><rect x="82" y="17" width="48" height="38" rx="4" stroke="currentColor" stroke-width="2"/><rect x="20" y="66" width="48" height="38" rx="4" stroke="currentColor" stroke-width="2"/><rect x="82" y="66" width="48" height="38" rx="4" stroke="currentColor" stroke-width="2"/><path d="M35 30h18m-18 9h12m50-9h17m-17 9h11m-73 40h18m-18 9h12m50-9h17m-17 9h11" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></div><h3 data-ar="كتالوجات وطلبات تسعير" data-en="Catalogs & quotations">كتالوجات وطلبات تسعير</h3><p data-ar="تصنيفات وبحث وتفاصيل منتجات، مع تجربة طلب عرض سعر مناسبة للشركات." data-en="Searchable catalogs, clear product information and B2B quote-request journeys.">تصنيفات وبحث وتفاصيل منتجات، مع تجربة طلب عرض سعر مناسبة للشركات.</p></article>
-          <article class="service"><span class="service-index">03 / CMS</span><div class="service-illustration service-cms" aria-hidden="true"><svg viewBox="0 0 150 120" fill="none"><rect x="16" y="20" width="118" height="81" rx="5" stroke="currentColor" stroke-width="2"/><path d="M46 20v81M25 33h13m-13 12h13m-13 12h10M57 33h61M57 44h40" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><rect x="57" y="56" width="27" height="30" rx="2" fill="currentColor" opacity=".15"/><path d="M93 64h24M93 76h17" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></div><h3 data-ar="WordPress وإدارة المحتوى" data-en="WordPress & CMS">WordPress وإدارة المحتوى</h3><p data-ar="لوحة تحكم تمكّن فريقك من تحديث النصوص والصور والمنتجات." data-en="Content tools your team can use to update text, images and products.">لوحة تحكم تمكّن فريقك من تحديث النصوص والصور والمنتجات.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="process" id="process" aria-labelledby="process-title">
-      <div class="shell process-layout">
-        <div class="process-copy">
-          <p class="small-label">04 / <span data-ar="طريقة العمل" data-en="MY APPROACH">طريقة العمل</span></p>
-          <h2 id="process-title" data-ar="من أول نقاش، إلى موقع جاهز للاستخدام." data-en="From the first conversation to a usable website.">من أول نقاش، إلى موقع جاهز للاستخدام.</h2>
-          <p data-ar="تتعامل معي مباشرة. نحدد احتياج الشركة، نراجع التصميم، ثم ننفّذ ونختبر قبل التسليم." data-en="You work directly with me. We clarify business needs, review designs, build, and verify before handover.">تتعامل معي مباشرة. نحدد احتياج الشركة، نراجع التصميم، ثم ننفّذ ونختبر قبل التسليم.</p>
-        </div>
-        <div class="process-steps">
-          <div class="process-step"><span>01</span><div><h3 data-ar="نفهم نشاطك وأهدافك" data-en="Understand the business">نفهم نشاطك وأهدافك</h3><p data-ar="وش يحتاج العميل يشوف ويسوي؟ وش تحتاجون تديرون من داخل الموقع؟" data-en="What must visitors discover and do? What should your team manage?">وش يحتاج العميل يشوف ويسوي؟ وش تحتاجون تديرون من داخل الموقع؟</p></div></div>
-          <div class="process-step"><span>02</span><div><h3 data-ar="نصمم ونطوّر" data-en="Design and build">نصمم ونطوّر</h3><p data-ar="نسخة قابلة للتجربة والمراجعة بالعربية والإنجليزية وعلى الجوال." data-en="A reviewable working version across languages and screen sizes.">نسخة قابلة للتجربة والمراجعة بالعربية والإنجليزية وعلى الجوال.</p></div></div>
-          <div class="process-step"><span>03</span><div><h3 data-ar="نختبر ونسلّم" data-en="Verify and hand over">نختبر ونسلّم</h3><p data-ar="نفحص المسارات المهمة ونتفق على النشر والتسليم حسب النطاق." data-en="We test critical journeys, then agree on publishing and handover.">نفحص المسارات المهمة ونتفق على النشر والتسليم حسب النطاق.</p></div></div>
+    <section class="approach" id="approach" aria-labelledby="approach-title">
+      <div class="container approach-grid">
+        <div><div class="section-kicker"><span class="section-no">03.</span><span><span data-ar="الطريقة" data-en="THE APPROACH">الطريقة</span></span></div><h2 id="approach-title" data-ar="من فكرة مبهمة<br>إلى شيء يشتغل." data-en="From a loose brief<br>to a working site.">من فكرة مبهمة<br>إلى شيء يشتغل.</h2><p class="approach-intro" data-ar="تشتغل معي مباشرة. كل مرحلة فيها نتيجة قابلة للمراجعة، مو وعود غير واضحة." data-en="Work directly with me. Every stage has a reviewable result, not a vague promise.">تشتغل معي مباشرة. كل مرحلة فيها نتيجة قابلة للمراجعة، مو وعود غير واضحة.</p></div>
+        <div class="approach-steps">
+          <div class="approach-step"><span class="step-count latin">01</span><div><h3 data-ar="نفهم النشاط" data-en="Understand the business">نفهم النشاط</h3><p data-ar="العميل المستهدف، الهدف من الموقع، والأولوية الحقيقية." data-en="Who the site serves, what it needs to achieve, and what matters first.">العميل المستهدف، الهدف من الموقع، والأولوية الحقيقية.</p></div></div>
+          <div class="approach-step"><span class="step-count latin">02</span><div><h3 data-ar="نصمم وننفّذ" data-en="Design and implement">نصمم وننفّذ</h3><p data-ar="تصميم مخصص، بناء متدرج، ومراجعة على الجوال والكمبيوتر." data-en="Purposeful design, incremental implementation, and desktop/mobile reviews.">تصميم مخصص، بناء متدرج، ومراجعة على الجوال والكمبيوتر.</p></div></div>
+          <div class="approach-step"><span class="step-count latin">03</span><div><h3 data-ar="نختبر ونسلّم" data-en="Verify and hand over">نختبر ونسلّم</h3><p data-ar="نختبر المسارات الأساسية، نراجع اللغتين، ونتفق على خطة التسليم والدعم." data-en="Test key journeys, review both languages, and agree on handover and support.">نختبر المسارات الأساسية، نراجع اللغتين، ونتفق على خطة التسليم والدعم.</p></div></div>
         </div>
       </div>
     </section>
 
     <section class="contact" id="contact" aria-labelledby="contact-title">
-      <div class="shell contact-layout">
-        <div>
-          <p class="small-label">05 / <span data-ar="خلّنا نبدأ" data-en="LET'S CONNECT">خلّنا نبدأ</span></p>
-          <h2 id="contact-title" data-ar="موقعك القادم يستاهل بداية صح." data-en="Let's make your next website worth visiting.">موقعك القادم يستاهل بداية صح.</h2>
-        </div>
-        <div class="contact-panel">
-          <p data-ar="عندك شركة تبغى تطور موقعها؟ نبدأ بمناقشة النشاط والمشكلة والتصور الأولي قبل الاتفاق على النطاق والسعر." data-en="Have a business website to build or improve? Let's discuss the business, the problem and an initial direction before scope and price.">عندك شركة تبغى تطور موقعها؟ نبدأ بمناقشة النشاط والمشكلة والتصور الأولي قبل الاتفاق على النطاق والسعر.</p>
-          <a class="button button-dark" href="https://github.com/Abdulrahmnh" rel="noopener noreferrer" target="_blank"><span data-ar="عرض ملفي ووسيلة التواصل الحالية" data-en="Public profile & current contact path">عرض ملفي ووسيلة التواصل الحالية</span><svg class="icon-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
-          <small data-ar="وسيلة التواصل الحالية عبر الملف العام في GitHub؛ ستُضاف قناة أعمال مباشرة قبل بدء التواصل التجاري." data-en="The current contact link points to a public GitHub profile. A dedicated business contact channel will be added before outreach.">وسيلة التواصل الحالية عبر الملف العام في GitHub؛ ستُضاف قناة أعمال مباشرة قبل بدء التواصل التجاري.</small>
-        </div>
+      <div class="container contact-wrap">
+        <div class="contact-top"><span class="latin">04 / START SOMETHING</span><span class="contact-symbol latin" aria-hidden="true">A/</span></div>
+        <h2 id="contact-title"><span data-ar="مستعد نخلي" data-en="Got a website">مستعد نخلي</span><span data-ar="موقعك أفضل؟" data-en="worth building?">موقعك أفضل؟</span></h2>
+        <div class="contact-lower"><p data-ar="موقع جديد أو تطوير موقع قائم؟ نبدأ بنقاش عن المشكلة والنطاق، وبعدها نتفق على الحل المناسب." data-en="Building a new site or upgrading an old one? Let's start with the problem and scope, then find the right approach.">موقع جديد أو تطوير موقع قائم؟ نبدأ بنقاش عن المشكلة والنطاق، وبعدها نتفق على الحل المناسب.</p><div><a class="contact-button" href="https://github.com/Abdulrahmnh" target="_blank" rel="noopener noreferrer"><span data-ar="شوف ملفي وتواصل" data-en="View my profile and connect">شوف ملفي وتواصل</span><svg class="ic ic-ext" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a><small data-ar="قناة مؤقتة عبر GitHub إلى أن نعتمد وسيلة تواصل أعمال مباشرة." data-en="Temporary GitHub contact path until a dedicated business channel is approved.">قناة مؤقتة عبر GitHub إلى أن نعتمد وسيلة تواصل أعمال مباشرة.</small></div></div>
       </div>
     </section>
   </main>
-  <footer class="site-footer"><div class="shell footer-layout"><div class="footer-identity"><strong>ABDULRAHMAN<span>.</span></strong><small data-ar="مطور ويب مستقل · السعودية" data-en="Independent web developer · Saudi Arabia">مطور ويب مستقل · السعودية</small></div><span>© 2026</span><a href="#top"><span data-ar="العودة للأعلى" data-en="Back to top">العودة للأعلى</span><svg class="icon-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></div></footer>
+  <footer class="site-footer"><div class="container footer-inner"><a class="footer-wordmark latin" href="#top">ABDULRAHMAN<span>/</span></a><span data-ar="مطور ويب مستقل · السعودية" data-en="Independent web developer · Saudi Arabia">مطور ويب مستقل · السعودية</span><span class="latin">© 2026</span><a class="footer-top" href="#top"><span data-ar="للأعلى" data-en="Back to top">للأعلى</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20V4m-6 6 6-6 6 6"/></svg></a></div></footer>
 </body>
 </html>
