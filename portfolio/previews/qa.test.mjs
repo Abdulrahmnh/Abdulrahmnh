@@ -71,3 +71,24 @@ test('styles and scripts load from the portfolio publish root',()=>{
   assert.match(html,/href="\.\.\/_shared\/demo.css"/);
   assert.match(html,/src="\.\.\/_shared\/demo.js"/);
 });
+
+test('consistent corporate CTAs avoid decorative arrow glyphs or icon-only cards',()=>{
+  assert.doesNotMatch(html,/[↗↘↑➜→]/,'decorative arrows must not return');
+  const primary=[...html.matchAll(/class="[^"]*cta-primary[^"]*"/g)].map(m=>m[0]);
+  assert.equal(primary.length,3,'header, hero and form primary CTAs');
+  assert.match(css,/\.header-cta\{background:var\(--signal\)/,'primary navigation CTA uses orange');
+  const picks=[...html.matchAll(/<button[^>]*class="service-pick(?: row-pick)?"[^>]*data-service="([^"]+)"[^>]*>(.*?)<\/button>/g)];
+  assert.equal(picks.length,6,'all service pickers remain available');
+  for(const [,service,inner] of picks){
+    assert.match(inner,/data-en="[^"]+"/,'English CTA for '+service);
+    assert.match(inner,/data-ar="[^"]+"/,'Arabic CTA for '+service);
+    assert.doesNotMatch(inner,/<svg|<img|aria-hidden/,'no decorative icons for '+service);
+  }
+  assert.doesNotMatch(css,/\.row-pick\{[^}]*width:34px/,'no boxed arrow-only buttons');
+});
+test('capability links stay interactive and the RFQ remains simulation-only',()=>{
+  assert.match(js,/document\.querySelectorAll\('\[data-service\]'\)/);
+  assert.match(js,/serviceSelect\.value=selected/);
+  assert.match(js,/event\.preventDefault\(\)/);
+  assert.doesNotMatch(js,/\bfetch\s*\(|\bXMLHttpRequest\b|sendBeacon/);
+});
