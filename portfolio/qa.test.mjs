@@ -65,7 +65,8 @@ test('local project assets are present with translated alt text',()=>{
 });
 test('release safety: noindex and no invented sales contact',()=>{
  assert.match(html,/content="noindex, nofollow"/);
- assert.match(html,/Temporary GitHub contact path/);
+ assert.doesNotMatch(html,/href="https:\/\/github\.com\/Abdulrahmnh/);
+ assert.match(html,/Direct contact details will be added shortly/);
  assert.doesNotMatch(html,/mailto:[^"]+@|wa\.me\//);
 });
 test('responsive, focus and reduced-motion styles are present',()=>{
@@ -127,4 +128,10 @@ test('bilingual toggle and mobile menu execute against a DOM fixture',()=>{
  events.keydown({key:'Escape'});
  assert.equal(menu.getAttribute('aria-expanded'),'false');
  assert.ok(!state.has('is-open'));
+});
+
+test('expanded portfolio is bilingual and distinguishes concepts from products',()=>{
+ for(const key of ['sanead','rockline','rashid','aziz','qidr'])assert.ok(html.includes('data-project="'+key+'"'));
+ assert.match(html,/INDEPENDENT PRODUCT/);assert.match(html,/UNPUBLISHED INTERACTIVE CONCEPT/);
+ assert.match(css,/\.work-collection/);
 });
