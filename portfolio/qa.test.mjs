@@ -63,11 +63,13 @@ test('local project assets are present with translated alt text',()=>{
  for(const image of images){assert.match(image,/src="assets\/dawserve-/);assert.match(image,/data-alt-ar=/);assert.match(image,/data-alt-en=/);}
  assert.match(js,/data-alt-ar/);
 });
-test('release safety: noindex and no invented sales contact',()=>{
+test('release safety: noindex and approved direct contact',()=>{
  assert.match(html,/content="noindex, nofollow"/);
  assert.doesNotMatch(html,/href="https:\/\/github\.com\/Abdulrahmnh/);
- assert.match(html,/Direct contact details will be added shortly/);
- assert.doesNotMatch(html,/mailto:[^"]+@|wa\.me\//);
+ assert.doesNotMatch(html,/Direct contact details will be added shortly/);
+ assert.equal((html.match(/href="https:\/\/wa\.me\/966541674528"/g)||[]).length,2);
+ assert.match(html,/href="mailto:abdulrahmanalhatti@gmail\.com"/);
+ assert.match(html,/data-ar="تواصل عبر واتساب" data-en="Chat on WhatsApp"/);
 });
 test('responsive, focus and reduced-motion styles are present',()=>{
  assert.match(css,/max-width:660px/);
