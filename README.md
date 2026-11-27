@@ -56,6 +56,10 @@ I build and develop digital product concepts and software products, with a profe
 
 [Explore more projects in my bilingual portfolio](https://abdulrahman-studio.onrender.com/).
 
+## Engineering showcase
+
+Explore project-level architecture, scope, design screenshots and quality evidence in the [public project showcase](showcase/packages/README.md). The commercial implementations remain private.
+
 ## What I work on
 
 | Area | Focus |
