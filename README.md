@@ -24,14 +24,14 @@ I build and develop digital product concepts and software products, with a profe
 <h3>NASAQ Commerce</h3>
 <strong>Custom e-commerce · Working demo</strong>
 <p>Bilingual retail experience, server-backed catalogue and checkout, order management and simulated payment.</p>
-<p><a href="https://nasaq-commerce-demo-khhq.onrender.com">Try the demo</a> · <a href="showcase/nasaq-commerce.md">Case study</a></p>
+<p><a href="https://nasaq-commerce-demo-khhq.onrender.com">Try the demo</a> · <a href="https://github.com/Abdulrahmnh/nasaq-commerce-showcase">Project repository</a></p>
 </td>
 <td width="50%" valign="top">
 <a href="https://sanead.com"><img src="showcase/images/sanead.png" alt="Sanead learning experience design" width="100%"></a>
 <h3>Sanead | سنيد</h3>
 <strong>Education technology · Live SaaS</strong>
 <p>Certification preparation platform with guided learning, exam simulation and progress tracking.</p>
-<p><a href="https://sanead.com">Visit product</a> · <a href="showcase/sanead.md">Case study</a></p>
+<p><a href="https://sanead.com">Visit product</a> · <a href="https://github.com/Abdulrahmnh/sanead-showcase">Project repository</a></p>
 </td>
 </tr>
 <tr>
@@ -40,14 +40,14 @@ I build and develop digital product concepts and software products, with a profe
 <h3>DawServe</h3>
 <strong>Healthcare B2B · Independent concept</strong>
 <p>Arabic/English product catalogue, quotation-request experience and WordPress implementation.</p>
-<p><a href="https://dawserve-faisal-preview-1123.onrender.com">View concept</a> · <a href="showcase/dawserve.md">Case study</a></p>
+<p><a href="https://dawserve-faisal-preview-1123.onrender.com">View concept</a> · <a href="https://github.com/Abdulrahmnh/dawserve-showcase">Project repository</a></p>
 </td>
 <td width="50%" valign="top">
 <a href="https://al-rashid-preview.onrender.com"><img src="showcase/images/hospitality.png" alt="Restaurant ordering experience design" width="100%"></a>
 <h3>Hospitality &amp; Digital Ordering</h3>
 <strong>Food &amp; beverage · Independent concepts</strong>
 <p>Interactive menus, branch selection and mobile-first pickup ordering experiences.</p>
-<p><a href="https://al-rashid-preview.onrender.com">View concept</a> · <a href="showcase/hospitality.md">Case study</a></p>
+<p><a href="https://al-rashid-preview.onrender.com">View concept</a> · <a href="https://github.com/Abdulrahmnh/hospitality-showcase">Project repository</a></p>
 </td>
 </tr>
 </table>
@@ -58,7 +58,7 @@ I build and develop digital product concepts and software products, with a profe
 
 ## Engineering showcase
 
-Explore project-level architecture, scope, design screenshots and quality evidence in the [public project showcase](showcase/packages/README.md). The commercial implementations remain private.
+Explore project-level architecture, scope, design screenshots and quality evidence in the [public project showcase](showcase/packages/README.md), or open the dedicated repositories above. The commercial implementations remain private.
 
 ## What I work on
 
