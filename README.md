@@ -1,6 +1,6 @@
 <h1 align="center">Abdulrahman</h1>
-<p align="center"><strong>Software Quality Engineer · SaaS Founder · Web Product Development</strong></p>
-<p align="center">Riyadh, Saudi Arabia &nbsp; | &nbsp; BSc Computer Science &nbsp; | &nbsp; ISTQB® CTFL</p>
+<p align="center"><strong>SaaS Founder &amp; Software Product Builder</strong></p>
+<p align="center">Web Applications &nbsp; · &nbsp; E-commerce &nbsp; · &nbsp; Digital Solutions<br>Riyadh, Saudi Arabia</p>
 <p align="center">
   <a href="https://abdulrahman-studio.onrender.com/"><strong>Portfolio / معرض الأعمال</strong></a> &nbsp; · &nbsp;
   <a href="https://www.linkedin.com/in/abdulrahman-alhatti">LinkedIn</a> &nbsp; · &nbsp;
@@ -11,21 +11,14 @@
 
 ## About
 
-I build and develop digital product concepts and software products, with a professional background in software quality assurance and user acceptance testing. My focus is turning business needs into usable, tested experiences — from requirements and design to implementation, release and continuous improvement.
+I build digital products that turn business needs into practical software — from SaaS platforms and e-commerce experiences to business websites and interactive applications. My approach combines product strategy, user experience, AI-assisted development, technical oversight and release verification. A professional background in software quality adds a strong focus on reliability and customer experience.
 
-أعمل في جودة البرمجيات واختبارات قبول المستخدم، وأطوّر منتجات رقمية ومواقع للشركات والمتاجر، مع اهتمام خاص بتجربة المستخدم وجودة التنفيذ. أستخدم أدوات التطوير المدعومة بالذكاء الاصطناعي ضمن سير عمل يشمل التخطيط والاختبار والمراجعة.
+أبني منتجات رقمية ومنصات SaaS ومتاجر إلكترونية وتجارب ويب للشركات، انطلاقًا من احتياجات العمل وحتى التنفيذ والنشر والتحسين. أستفيد من خبرتي المهنية في جودة البرمجيات وأدوات التطوير المدعومة بالذكاء الاصطناعي لتقديم تجارب واضحة وموثوقة.
 
 ## Selected work
 
 <table>
 <tr>
-<td width="50%" valign="top">
-<a href="https://nasaq-commerce-demo-khhq.onrender.com"><img src="showcase/images/nasaq-commerce.png" alt="NASAQ Commerce storefront design" width="100%"></a>
-<h3>NASAQ Commerce</h3>
-<strong>Custom e-commerce · Working demo</strong>
-<p>Bilingual retail experience, server-backed catalogue and checkout, order management and simulated payment.</p>
-<p><a href="https://nasaq-commerce-demo-khhq.onrender.com">Try the demo</a> · <a href="https://github.com/Abdulrahmnh/nasaq-commerce-showcase">Project repository</a></p>
-</td>
 <td width="50%" valign="top">
 <a href="https://sanead.com"><img src="showcase/images/sanead.png" alt="Sanead learning experience design" width="100%"></a>
 <h3>Sanead | سنيد</h3>
@@ -33,21 +26,28 @@ I build and develop digital product concepts and software products, with a profe
 <p>Certification preparation platform with guided learning, exam simulation and progress tracking.</p>
 <p><a href="https://sanead.com">Visit product</a> · <a href="https://github.com/Abdulrahmnh/sanead-showcase">Project repository</a></p>
 </td>
+<td width="50%" valign="top">
+<a href="https://nasaq-commerce-demo-khhq.onrender.com"><img src="showcase/images/nasaq-commerce.png" alt="NASAQ Commerce storefront design" width="100%"></a>
+<h3>NASAQ Commerce</h3>
+<strong>Custom e-commerce · Working demo</strong>
+<p>Bilingual retail experience, server-backed catalogue and checkout, order management and simulated payment.</p>
+<p><a href="https://nasaq-commerce-demo-khhq.onrender.com">Try the demo</a> · <a href="https://github.com/Abdulrahmnh/nasaq-commerce-showcase">Project repository</a></p>
+</td>
 </tr>
 <tr>
-<td width="50%" valign="top">
-<a href="https://dawserve-faisal-preview-1123.onrender.com"><img src="showcase/images/dawserve.png" alt="DawServe catalogue website design" width="100%"></a>
-<h3>DawServe</h3>
-<strong>Healthcare B2B · Independent concept</strong>
-<p>Arabic/English product catalogue, quotation-request experience and WordPress implementation.</p>
-<p><a href="https://dawserve-faisal-preview-1123.onrender.com">View concept</a> · <a href="https://github.com/Abdulrahmnh/dawserve-showcase">Project repository</a></p>
-</td>
 <td width="50%" valign="top">
 <a href="https://al-rashid-preview.onrender.com"><img src="showcase/images/hospitality.png" alt="Restaurant ordering experience design" width="100%"></a>
 <h3>Hospitality &amp; Digital Ordering</h3>
 <strong>Food &amp; beverage · Independent concepts</strong>
 <p>Interactive menus, branch selection and mobile-first pickup ordering experiences.</p>
 <p><a href="https://al-rashid-preview.onrender.com">View concept</a> · <a href="https://github.com/Abdulrahmnh/hospitality-showcase">Project repository</a></p>
+</td>
+<td width="50%" valign="top">
+<a href="https://dawserve-faisal-preview-1123.onrender.com"><img src="showcase/images/dawserve.png" alt="DawServe catalogue website design" width="100%"></a>
+<h3>DawServe</h3>
+<strong>Healthcare B2B · Independent concept</strong>
+<p>Arabic/English product catalogue, quotation-request experience and WordPress implementation.</p>
+<p><a href="https://dawserve-faisal-preview-1123.onrender.com">View concept</a> · <a href="https://github.com/Abdulrahmnh/dawserve-showcase">Project repository</a></p>
 </td>
 </tr>
 </table>
@@ -64,12 +64,13 @@ Explore project-level architecture, scope, design screenshots and quality eviden
 
 | Area | Focus |
 | --- | --- |
-| Product development | Business requirements, prototypes, web applications, SaaS and e-commerce |
-| Software quality | UAT, functional and regression testing, API validation, defect reporting |
-| Delivery | GitHub, deployments, release verification and continuous improvement |
+| SaaS & product development | Product strategy, requirements, prototypes and scalable product design |
+| E-commerce & web solutions | Storefronts, checkout experiences, business websites and digital catalogues |
 | User experience | Arabic/English interfaces, responsive layouts and customer journeys |
+| Engineering & delivery | API integration, GitHub, deployments and continuous improvement |
+| Quality & reliability | Professional QA background, functional validation and release verification |
 
-## Technology exposure through projects
+## Technology stack across projects
 
 React · TypeScript · JavaScript · HTML/CSS · Python/FastAPI · PostgreSQL · WordPress/PHP · GitHub · Docker · Render
 
