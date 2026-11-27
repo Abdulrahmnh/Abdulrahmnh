@@ -2,7 +2,7 @@
 
 **Independent B2B website concept** · [Open experience](https://dawserve-faisal-preview-1123.onrender.com) · [Back to profile](../README.md)
 
-![DawServe — design preview](https://cdn.magicpatterns.com/previews/os-live/oR1Um1fc3MDdRtrhspitgs/gAfoqYLPfZZK1DmyPiVHJj/1310d3b8-7d5b-4e15-8a43-131ab7de4b64.png)
+![DawServe — design preview](images/dawserve.png)
 
 ## Business objective
 

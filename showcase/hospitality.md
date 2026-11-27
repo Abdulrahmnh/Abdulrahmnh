@@ -2,7 +2,7 @@
 
 **Independent restaurant concepts** · [Open experience](https://al-rashid-preview.onrender.com) · [Back to profile](../README.md)
 
-![Hospitality & digital ordering — design preview](https://cdn.magicpatterns.com/previews/os-live/t5xhLoUZujLbZdC6CSTyCc/cxMjtKPtrC3pt1ahF8KrP5/6dab0309-5432-4d88-a439-3efd73f63fcf.png)
+![Hospitality & digital ordering — design preview](images/hospitality.png)
 
 ## Business objective
 

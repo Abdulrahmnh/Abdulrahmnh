@@ -2,7 +2,7 @@
 
 **Live independent product** · [Open experience](https://sanead.com) · [Back to profile](../README.md)
 
-![Sanead | سنيد — design preview](https://cdn.magicpatterns.com/previews/os-live/qyNeGMT2t1vVDQ8c9GG4S1/qYNHYtzQTndcKHtg9gMa4b/1686537a-6413-4a6a-bad6-2769d84884f2.png)
+![Sanead | سنيد — design preview](images/sanead.png)
 
 ## Business objective
 

@@ -2,7 +2,7 @@
 
 **Independent working demo** · [Open experience](https://nasaq-commerce-demo-khhq.onrender.com) · [Back to profile](../README.md)
 
-![NASAQ Commerce — design preview](https://cdn.magicpatterns.com/previews/os-live/myYwVwmMRjMB9Za5dEDCCm/7xeqsLuNnczeYd3wgiXtT4/c287bea1-b4fd-4eca-a23c-e5ef92b96104.png)
+![NASAQ Commerce — design preview](images/nasaq-commerce.png)
 
 ## Business objective
 
