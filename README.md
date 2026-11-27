@@ -11,9 +11,9 @@
 
 ## About
 
-I build digital products that turn business needs into practical software — from SaaS platforms and e-commerce experiences to business websites and interactive applications. My approach combines product strategy, user experience, AI-assisted development, technical oversight and release verification. A professional background in software quality adds a strong focus on reliability and customer experience.
+I build digital products that turn business needs into practical software — from SaaS platforms and e-commerce experiences to business websites and interactive applications. My approach combines product strategy, user experience, software development, technical oversight and release verification. A professional background in software quality adds a strong focus on reliability and customer experience.
 
-أبني منتجات رقمية ومنصات SaaS ومتاجر إلكترونية وتجارب ويب للشركات، انطلاقًا من احتياجات العمل وحتى التنفيذ والنشر والتحسين. أستفيد من خبرتي المهنية في جودة البرمجيات وأدوات التطوير المدعومة بالذكاء الاصطناعي لتقديم تجارب واضحة وموثوقة.
+أبني منتجات رقمية ومنصات SaaS ومتاجر إلكترونية وتجارب ويب للشركات، انطلاقًا من احتياجات العمل وحتى التنفيذ والنشر والتحسين. أستفيد من خبرتي المهنية في جودة البرمجيات وممارسات التطوير والمراجعة لتقديم تجارب واضحة وموثوقة.
 
 ## Selected work
 

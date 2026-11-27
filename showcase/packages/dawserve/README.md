@@ -20,7 +20,7 @@ WordPress, PHP, HTML/CSS, JavaScript
 
 ## My contribution
 
-Concept, requirements, AI-assisted implementation, and functional and responsive QA.
+Concept, requirements, implementation coordination, and functional and responsive QA.
 
 ## Scope and transparency
 

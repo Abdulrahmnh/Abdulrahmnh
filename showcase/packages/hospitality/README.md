@@ -20,7 +20,7 @@ React, TypeScript, responsive web UI
 
 ## My contribution
 
-Product concept, interaction design, AI-assisted implementation and QA.
+Product concept, interaction design, implementation coordination and QA.
 
 ## Scope and transparency
 

@@ -42,7 +42,7 @@ React, TypeScript, Python / FastAPI, Docker, Render
 
 ## My contribution
 
-Product direction, requirements, implementation coordination, QA and deployment using AI-assisted development.
+Product direction, requirements, implementation coordination, quality assurance and deployment.
 
 ## Scope and transparency
 
