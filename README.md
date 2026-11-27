@@ -1,44 +1,83 @@
-Hi there, I'm Abdulrahman![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif)
-===================================================================================================================================
-
-Junior Software Developer
--------------------------
-
-I have been learning to code projects by Flutter, Currently I'm improving myself in HTML, CSS, JavaScript and a new Framework. I have really found a passion for Software Development.
-
-* 🌍  I'm based in Riyadh, Saudi Arabia.
-* ✉️  You can contact me at [abdulrahmanalhatti@gmail.com](mailto:abdulrahmanalhatti@gmail.com).
-* 🧠  I'm learning a new framework.
-* 🤝  I'm open to collaborating on Web app, Mobile app, ERP and more Software.
-* ⚡  I'm very excited about an opportunity to work as one of a team to publish amazing software.
-
-### Skills
-
-
-<p align="left">
-<a href="https://dart.dev/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/dart-colored.svg" width="36" height="36" alt="Dart" /></a>
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg" width="36" height="36" alt="JavaScript" /></a>
-<a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg" width="36" height="36" alt="HTML5" /></a>
-<a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg" width="36" height="36" alt="CSS3" /></a>
-<a href="https://firebase.google.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/firebase-colored.svg" width="36" height="36" alt="Firebase" /></a>
-<a href="https://flutter.dev/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/flutter-colored.svg" width="36" height="36" alt="Flutter" /></a>
-<a href="https://dotnet.microsoft.com/en-us/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/dot-net-colored.svg" width="36" height="36" alt=".NET" /></a>
+<h1 align="center">Abdulrahman</h1>
+<p align="center"><strong>Software Quality Engineer · SaaS Founder · Web Product Development</strong></p>
+<p align="center">Riyadh, Saudi Arabia &nbsp; | &nbsp; BSc Computer Science &nbsp; | &nbsp; ISTQB® CTFL</p>
+<p align="center">
+  <a href="https://abdulrahman-studio.onrender.com/"><strong>Portfolio / معرض الأعمال</strong></a> &nbsp; · &nbsp;
+  <a href="https://www.linkedin.com/in/abdulrahman-alhatti">LinkedIn</a> &nbsp; · &nbsp;
+  <a href="mailto:abdulrahmanalhatti@gmail.com">Email</a>
 </p>
 
+---
 
-### Socials
+## About
 
-<p align="left"> <a href="https://www.github.com/Abdulrahmnh" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github.svg" width="32" height="32" /></a> <a href="https://www.linkedin.com/in/abdulrahman-alhatti" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="32" height="32" /></a></p>
+I build and develop digital product concepts and software products, with a professional background in software quality assurance and user acceptance testing. My focus is turning business needs into usable, tested experiences — from requirements and design to implementation, release and continuous improvement.
 
-### Badges
+أعمل في جودة البرمجيات واختبارات قبول المستخدم، وأطوّر منتجات رقمية ومواقع للشركات والمتاجر، مع اهتمام خاص بتجربة المستخدم وجودة التنفيذ. أستخدم أدوات التطوير المدعومة بالذكاء الاصطناعي ضمن سير عمل يشمل التخطيط والاختبار والمراجعة.
 
-<b>My GitHub Stats</b>
+## Selected work
 
-<a href="http://www.github.com/Abdulrahmnh"><img src="https://github-readme-stats.vercel.app/api?username=Abdulrahmnh&show_icons=true&hide=&count_private=true&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&show_icons=true" alt="Abdulrahmnh's GitHub stats" /></a>
+<table>
+<tr>
+<td width="50%" valign="top">
+<a href="https://nasaq-commerce-demo-khhq.onrender.com"><img src="https://cdn.magicpatterns.com/previews/os-live/myYwVwmMRjMB9Za5dEDCCm/7xeqsLuNnczeYd3wgiXtT4/c287bea1-b4fd-4eca-a23c-e5ef92b96104.png" alt="NASAQ Commerce storefront design" width="100%"></a>
+<h3>NASAQ Commerce</h3>
+<strong>Custom e-commerce · Working demo</strong>
+<p>Bilingual retail experience, server-backed catalogue and checkout, order management and simulated payment.</p>
+<p><a href="https://nasaq-commerce-demo-khhq.onrender.com">Try the demo</a> · <a href="showcase/nasaq-commerce.md">Case study</a></p>
+</td>
+<td width="50%" valign="top">
+<a href="https://sanead.com"><img src="https://cdn.magicpatterns.com/previews/os-live/qyNeGMT2t1vVDQ8c9GG4S1/qYNHYtzQTndcKHtg9gMa4b/1686537a-6413-4a6a-bad6-2769d84884f2.png" alt="Sanead learning experience design" width="100%"></a>
+<h3>Sanead | سنيد</h3>
+<strong>Education technology · Live SaaS</strong>
+<p>Certification preparation platform with guided learning, exam simulation and progress tracking.</p>
+<p><a href="https://sanead.com">Visit product</a> · <a href="showcase/sanead.md">Case study</a></p>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<a href="https://dawserve-faisal-preview-1123.onrender.com"><img src="https://cdn.magicpatterns.com/previews/os-live/oR1Um1fc3MDdRtrhspitgs/gAfoqYLPfZZK1DmyPiVHJj/1310d3b8-7d5b-4e15-8a43-131ab7de4b64.png" alt="DawServe catalogue website design" width="100%"></a>
+<h3>DawServe</h3>
+<strong>Healthcare B2B · Independent concept</strong>
+<p>Arabic/English product catalogue, quotation-request experience and WordPress implementation.</p>
+<p><a href="https://dawserve-faisal-preview-1123.onrender.com">View concept</a> · <a href="showcase/dawserve.md">Case study</a></p>
+</td>
+<td width="50%" valign="top">
+<a href="https://al-rashid-preview.onrender.com"><img src="https://cdn.magicpatterns.com/previews/os-live/t5xhLoUZujLbZdC6CSTyCc/cxMjtKPtrC3pt1ahF8KrP5/6dab0309-5432-4d88-a439-3efd73f63fcf.png" alt="Restaurant ordering experience design" width="100%"></a>
+<h3>Hospitality &amp; Digital Ordering</h3>
+<strong>Food &amp; beverage · Independent concepts</strong>
+<p>Interactive menus, branch selection and mobile-first pickup ordering experiences.</p>
+<p><a href="https://al-rashid-preview.onrender.com">View concept</a> · <a href="showcase/hospitality.md">Case study</a></p>
+</td>
+</tr>
+</table>
 
-<a href="http://www.github.com/Abdulrahmnh"><img src="https://github-readme-streak-stats.herokuapp.com/?user=Abdulrahmnh&stroke=ffffff&background=1c1917&ring=0891b2&fire=0891b2&currStreakNum=ffffff&currStreakLabel=0891b2&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true" /></a>
+*Images are design previews. Live products, working demonstrations and independent concepts are identified separately. Concept sites are not official commissioned client deliveries. Payment and restaurant ordering demonstrations do not process real transactions.*
 
+[Explore more projects in my bilingual portfolio](https://abdulrahman-studio.onrender.com/).
 
-<b>Top Repositories</b>
+## What I work on
 
-<div width="100%" align="center"><a href="https://github.com/Abdulrahmnh/BMI-Calculator" align="left"><img align="left" width="45%" src="https://github-readme-stats.vercel.app/api/pin/?username=Abdulrahmnh&repo=BMI-Calculator&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&locale=en" /></a><a href="https://github.com/Abdulrahmnh/recipe" align="right"><img align="right" width="45%" src="https://github-readme-stats.vercel.app/api/pin/?username=Abdulrahmnh&repo=recipe&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&locale=en" /></a></div><br /><br /><br /><br /><br /><br /><br />
+| Area | Focus |
+| --- | --- |
+| Product development | Business requirements, prototypes, web applications, SaaS and e-commerce |
+| Software quality | UAT, functional and regression testing, API validation, defect reporting |
+| Delivery | GitHub, deployments, release verification and continuous improvement |
+| User experience | Arabic/English interfaces, responsive layouts and customer journeys |
+
+## Technology exposure through projects
+
+React · TypeScript · JavaScript · HTML/CSS · Python/FastAPI · PostgreSQL · WordPress/PHP · GitHub · Docker · Render
+
+## Education & professional certification
+
+- Bachelor of Science in Computer Science
+- ISTQB® Certified Tester Foundation Level (CTFL)
+
+## Earlier learning projects
+
+My public repositories also include earlier programming exercises and learning projects, including [BMI Calculator](https://github.com/Abdulrahmnh/BMI-Calculator), [Quiz App](https://github.com/Abdulrahmnh/Quiz_App) and [Library CLI](https://github.com/Abdulrahmnh/LibraryCliApp). These represent my learning journey rather than my current product portfolio.
+
+---
+
+<p align="center">Product thinking · Quality by design · Continuous learning</p>
